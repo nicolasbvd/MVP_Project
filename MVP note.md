@@ -71,7 +71,7 @@ se concentrer sur ceux qui ont pas?(auto ecole)
 
 ## Infos cours
 
-### C2 - Public 
+### C2/3 - Public 
 cibler/ajouter des problematique pour bien la définir.
 
 **Etablir moyens pour identifier et comprendre public**: interview(qualitatif, comprendre la personne), tests(à la fin), questionnaires quantitatifs (stat)-> demander si le questionnaire lui a plu et si on peut revenir pour interview, observations terrain... => Hypothèses des besoins à confirmer
@@ -84,10 +84,21 @@ Savoir **rebondir** sur ce que la personne dit (ex: la personne utilise doodle p
 Voir exemples slides
 Parler le moins possible, écouter
 
-### C3 - Retours constructifs et pivoter
+### C4 - Retours constructifs et pivoter
 **pivot** réorienter projet et conserver acquis. Accepter de changer les idées sans tout reprendre de zéro (recul). Identifier forces et faiblesses (**SWOT**: forces, faiblesses, opportunités, menaces).
 **Feedback** 1. ce qui est bien, 2. Ce qui pourrait être mieux, ce qu'on veut voir davantage, 3. Ce que ça m'inspire comme piste
 !! Ne jamais se justifier
+
+
+
+### C5 - Trouver des idées originales
+idée ancrée dans le contexte mais qui en explore les limites
+
+**Générer idées**: 
+- brainstorming (textuel): individuel puis partage
+- doodling(visuel): dessiner pour la génération, complète brainstorming
+
+**Classifier idées**: matrice de decision (basé sur l'effort et l'impact)
 
 
 

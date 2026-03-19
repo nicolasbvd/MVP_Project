@@ -46,7 +46,7 @@ Côté entreprise:
 # Public cible
 
 On cible :
-**Professionnels indépendants ou petites structures (1–10 employés)**
+**Professionnels indépendants ou petites structures (1–10 employés) -  Abandonné**
 
 Exemples de domaines concernés :
 - Santé (médecins, physiothérapeutes)
@@ -63,7 +63,7 @@ Caractéristiques :
 
 
 On cible aussi :
-**Structures éducatives et de formation (cours individuels ou en petits groupes)**
+**Structures éducatives et de formation (cours individuels ou en petits groupes) !!!**
 
 Exemples de domaines concernés :
 - Auto-écoles (leçons de conduite)
@@ -166,7 +166,7 @@ Caractéristiques :
 8. Les clients accepteraient un système de priorisation (ex : premier inscrit, urgence, fidélité).
 10. Les clients seraient prêts à activer une option “prévenez-moi si une place se libère”.
 
-# Questions
+# Questions générales, petite/moyenne entreprise + formation
 
 ## Questions d’entretien
 
@@ -213,7 +213,10 @@ Caractéristiques :
 - Par téléphone, le temps d'attente avant d'avoir une réponse est dérangeant?
 - Qu’est-ce qui vous donnerait envie d’utiliser un système de gestion en ligne ?
 
+#### Plus
+
 - Est ce que selon vous j'ai oublié quelque chose?
+- Pourquoi pas utiliser Salonkee, OneDoc, ...(solution existante)
 
 ## Questions formulaires
 
@@ -281,13 +284,102 @@ Caractéristiques :
 10. Trouveriez-vous juste qu'un système de liste d'attente attribue les créneaux libérés selon l'ordre d'inscription ?
     - Tout à fait d'accord / Plutôt d'accord / Neutre / Plutôt pas d'accord / Pas du tout d'accord
 
+# Analyse
 
-# Ce qu'il faudra faire:
+## Analyse formulaire
+Le formulaire fait ressortir que le domaine médicale n'a pas vraiment besoin de problèmes avec les annulations. Ils prennent ce temps pour les urgences, et même s'il n'y en a pas, il y a toujours quelqu'un qui a besoin d'un rendez-vous. Ils arrivent à couvrir un peu près 100% des annulations en très peu de temps.
 
-- 2 entretiens professionnels (ex : coiffeur + garagiste)
-- 2 entretiens clients (ceux qui prennent les rdv)
-- Entretiens semi structurés (20–30 minutes)
-- Un formulaire anonyme pour avoir des réponses si pas d'entretiens
-- Prise de notes
-- Analyse des thèmes récurrents
-- Mise à jour des hypothèses
+On a aussi une observation sur le domaine estéthique. On a des réponses de 2 stylistes ongulaire. Ce qui en ressort est qu'ils perdent un peu de temps et d'argent mais c'est très gérable. Ils arrivent souvent à retrouver quelqu'un, et il existe déjà des applications comme Salonkee pour les aider si jamais.
+
+On a une observation de prof d'auto-école, on a donc remarqué que le domaine de la formation indépendante a le plus de problème. Etant donné qu'ils dépendent directement des clients pour être payé, ils peuvent estimer beaucoup mieux les pertes financières qui sont vraiment élevés. Ils perdent beaucoup de temps à trouver des remplacants, et c'est même plus rare de trouver. Leur système de prise de rdv utilise what's app, ce qui n'est pas toujours adapté. Cela mélange la vie pro et la vie privée. Répondre aux messages et trouver des crénaux prend du temps. Il n'existe pas de solution générale pour toute les auto école.
+
+On va donc cibler les formations indépendantes, auto école, prof privé, ... .
+
+## Analyse entretiens
+
+# Questions entretiens avec structures de formation indépendante
+
+## Questions pour les formateurs/moniteurs
+
+### Comprendre le problème
+- Combien de clients avez vous par semaine?
+- Est ce que vous faites autre chose en parralèle (ex: sensi pour les profs d'auto ecole)?
+- Comment se passe une prise de rdv, une prise de contact avec le client?
+- Pouvez-vous me parler de la dernière fois qu'un apprenant a annulé ou n'a pas assisté à un cours ?
+- Que s'est-il passé concrètement et pourquoi selon vous ?
+- À quelle fréquence cela arrive-t-il par semaine/mois ?
+- Comment cela impacte votre planification et vos finances ?
+- Est-ce différent selon les périodes (rentrée, vacances, périodes d'examen) ?
+
+### Gestion actuelle
+- Comment gérez-vous actuellement les annulations de cours ?
+- Que faites-vous lorsqu'un créneau se libère sans prévenir ?
+- Avez-vous une liste d'attente d'apprenants (en attente de place), comment la maintenez vous ?
+- Comment choisissez-vous qui contacter en cas de place libérée ?
+- Combien de temps cela vous prend-il de réorganiser votre emploi du temps ?
+
+### Conséquences
+- Représente-t-il une perte financière significative chaque mois ?
+- Est-ce que cela impacte la qualité de votre enseignement (stress, manque de préparation) ?
+- Cela crée-t-il des tensions avec les apprenants ou les parents ?
+- Vous sentez-vous surchargé(e) par la gestion administrative ?
+
+### Pratiques et critères
+- Par quels critères attribuez-vous les créneaux libérés ? (ordre d'inscription, niveau, urgence, fidélité, etc.)
+- Comment les apprenants annulent-ils actuellement ? (appel, SMS/WhatsApp, mail, en personne, pas de notification)
+- Y a-t-il des apprenants qui ne préviennent pas et ne viennent pas simplement ?
+
+### Outils et solutions
+- Quel outil utilisez-vous pour gérer les inscriptions et les plannings ?
+- Connaissez-vous des solutions existantes ? Si oui, pourquoi ne les utilisez-vous pas ?
+- Selon vous, qu'est-ce qui vous donnerait envie d'utiliser un système automatisé ?
+- Est-ce que vous seriez intéressé(e) par pouvoir configurer vos propres critères de réattribution ?
+
+- Qu'est-ce qui vous prend le plus de temps dans votre travail sans être vraiment essentiel. Une obligation qui vous ralentit sans être au cœur de votre métier ?
+- Est ce que vous avez une remarque? quelque chose que j'ai pu raté sur le concept de votre métier?
+
+
+## Questions pour les apprenants
+
+### Expérience et comportement
+- Combien de cours de formation avez-vous par semaine/mois ?
+- Comment vous inscrivez-vous habituellement aux cours ? (téléphone, en ligne, en personne, via parent)
+- Avez-vous déjà raté un cours ? Si oui, pourquoi ?
+- Comment vous rappelez-vous de vos inscriptions et cours ?
+- Recevez-vous des rappels actuellement ? Si oui, de quel type et quand ?
+
+### Annulations et flexibilité
+- Combien de fois avez-vous annulé ces 3 derniers mois ?
+- Comment procédez-vous pour annuler ?
+- Avec combien de jours à l'avance annulez-vous généralement (quand vous le faites) ?
+- Avez-vous déjà dû annuler à la dernière minute ?
+- Y a-t-il des moments (vacances scolaires, périodes d'examen, etc.) où annuler est plus fréquent ?
+
+### Listes d'attente et équité
+- Avez-vous déjà souhaité rejoindre un cours mais n'aviez pas de place disponible ?
+- Si une place se libérait, aimeriez-vous en être automatiquement notifié ?
+- Seriez-vous frustré(e) si le formateur donnait la place à quelqu'un d'autre à la dernière minute ?
+- Comment trouveriez-vous juste qu'on attribue une place libérée ? (premier inscrit, niveau exigé, urgence, autre)
+
+### Préférences de communication
+- Quel type de rappel préférez-vous ? (SMS, e-mail, appel, notification application, WhatsApp, autre)
+- Combien de temps avant le cours aimeriez-vous recevoir un rappel ?
+- Préférez-vous gérer les inscriptions/annulations par téléphone ou en ligne ?
+
+### Motivations et freins
+- Qu'est-ce qui vous pousserait à être plus régulier (e) dans vos cours ?
+- Y a-t-il des obstacles à votre présence ? (constraints horaires, oublis, manque de motivation, etc.)
+- Seriez-vous plus motivé(e) par un système qui vous notifierait immédiatement si une place se libère plus tôt/plus tard ?
+
+
+# Idées
+
+- Guide d'utilisation d'apps existantes: What's app pro, calendrier, notion, ...
+- Site web avec système de calendrier avec rdv
+- App pour auto école:
+   - gère rdv avec pos géographqiue: le client rentre ses adresses fréquentes
+   - client rentre une adresse, l'app lui propose des heures par rapport au trajet du prof d'auto école (autre rdv)
+- App formation générale:
+   - Client peut selectionner des heure de rdv voulu (meme si deja prise) et si annulation il sera automatiquement mis au rdv voulu et annuler du rdv pris
+
+- Aide à la recherche de client pour petit indépendant? Collab?
