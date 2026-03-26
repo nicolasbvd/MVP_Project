@@ -31,6 +31,7 @@ Comment fluidifier les rendez-vous médicaux sans surcharger le personnel assist
 
 problèmatique sociale
 
+Comment des entreprises de formation indépendantes peuvent gérer leurs annulations de rendez-vous pour avoir le minimum de frais possible.
 # Besoin
 
 Côté patient:
@@ -374,12 +375,19 @@ On va donc cibler les formations indépendantes, auto école, prof privé, ... .
 
 # Idées
 
-- Guide d'utilisation d'apps existantes: What's app pro, calendrier, notion, ...
+- Guide d'utilisation d'apps existantes: What's app pro, calendrier, notion, Acuity, Glitz (auto ecole), Twilio
 - Site web avec système de calendrier avec rdv
 - App pour auto école:
-   - gère rdv avec pos géographqiue: le client rentre ses adresses fréquentes
+   - gère rdv avec pos géographique: le client rentre ses adresses fréquentes
    - client rentre une adresse, l'app lui propose des heures par rapport au trajet du prof d'auto école (autre rdv)
 - App formation générale:
    - Client peut selectionner des heure de rdv voulu (meme si deja prise) et si annulation il sera automatiquement mis au rdv voulu et annuler du rdv pris
 
 - Aide à la recherche de client pour petit indépendant? Collab?
+
+## Idée principale
+Guide d'utilisation de what's app buisness, relié à un dashboard sur le web pour aider le formateur à la gestion, et trouver facilement des remplaçants (num de téléphone, adresse, nom, ...). Un scheduler fait des rappels de rdv.
+
+Utiliser Twilio peut aider.
+
+

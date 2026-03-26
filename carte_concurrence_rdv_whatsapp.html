@@ -1,0 +1,105 @@
+
+<style>
+  .axis-label { font-size: 12px; font-weight: 500; fill: var(--color-text-secondary); }
+  .competitor { cursor: pointer; }
+  .competitor:hover rect { opacity: 0.85; }
+  .zone-label { font-size: 11px; fill: var(--color-text-secondary); font-style: italic; }
+  .your-spot rect { filter: none; }
+</style>
+<svg width="100%" viewBox="0 0 680 480">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Axes -->
+  <!-- X : Généraliste → Spécialisé formateurs -->
+  <line x1="60" y1="240" x2="640" y2="240" stroke="var(--color-border-secondary)" stroke-width="1" marker-end="url(#arrow)"/>
+  <text class="axis-label" x="62" y="258" text-anchor="start">Généraliste</text>
+  <text class="axis-label" x="638" y="258" text-anchor="end">Spécialisé formateurs</text>
+
+  <!-- Y : Email/SMS → WhatsApp natif -->
+  <line x1="350" y1="440" x2="350" y2="40" stroke="var(--color-border-secondary)" stroke-width="1" marker-end="url(#arrow)"/>
+  <text class="axis-label" x="350" y="458" text-anchor="middle">Canal : Email / SMS</text>
+  <text class="axis-label" x="350" y="28" text-anchor="middle">Canal : WhatsApp natif</text>
+
+  <!-- Quadrant zones (light background) -->
+  <!-- Q1 : haut-gauche (WhatsApp + Généraliste) -->
+  <rect x="62" y="42" width="282" height="194" rx="8" fill="var(--color-background-secondary)" opacity="0.5"/>
+  <text class="zone-label" x="203" y="68">WhatsApp, tout secteur</text>
+
+  <!-- Q2 : haut-droite (WhatsApp + Formateurs) = zone cible -->
+  <rect x="352" y="42" width="282" height="194" rx="8" fill="#EEEDFE" opacity="0.6"/>
+  <text class="zone-label" x="493" y="68">⭐ Zone à conquérir</text>
+
+  <!-- Q3 : bas-gauche (Email/SMS + Généraliste) -->
+  <rect x="62" y="246" width="282" height="186" rx="8" fill="var(--color-background-secondary)" opacity="0.3"/>
+  <text class="zone-label" x="203" y="340">Marché saturé</text>
+
+  <!-- Q4 : bas-droite (Email/SMS + Formateurs) -->
+  <rect x="352" y="246" width="282" height="186" rx="8" fill="var(--color-background-secondary)" opacity="0.4"/>
+  <text class="zone-label" x="493" y="340">Niche formateurs, sans WA</text>
+
+  <!-- CONCURRENTS -->
+
+  <!-- Wasel (WhatsApp + Généraliste, Maroc) -->
+  <g class="competitor c-teal" onclick="sendPrompt('Parle-moi plus de Wasel et comment s\'en différencier')">
+    <rect x="90" y="85" width="100" height="44" rx="8" stroke-width="0.5"/>
+    <text class="th" x="140" y="104" text-anchor="middle" dominant-baseline="central">Wasel</text>
+    <text class="ts" x="140" y="120" text-anchor="middle" dominant-baseline="central">Maroc / WA natif</text>
+  </g>
+
+  <!-- Trengo / Callbell (WhatsApp + Généraliste) -->
+  <g class="competitor c-teal" onclick="sendPrompt('Parle-moi de Trengo et Callbell')">
+    <rect x="210" y="140" width="110" height="44" rx="8" stroke-width="0.5"/>
+    <text class="th" x="265" y="159" text-anchor="middle" dominant-baseline="central">Trengo/Callbell</text>
+    <text class="ts" x="265" y="175" text-anchor="middle" dominant-baseline="central">CRM + WA</text>
+  </g>
+
+  <!-- SetTime (Email/SMS + Généraliste) -->
+  <g class="competitor c-gray" onclick="sendPrompt('Parle-moi de SetTime')">
+    <rect x="90" y="300" width="100" height="44" rx="8" stroke-width="0.5"/>
+    <text class="th" x="140" y="319" text-anchor="middle" dominant-baseline="central">SetTime</text>
+    <text class="ts" x="140" y="335" text-anchor="middle" dominant-baseline="central">WA manuel / pro</text>
+  </g>
+
+  <!-- Fresha / Acuity (Email/SMS + Généraliste) -->
+  <g class="competitor c-gray" onclick="sendPrompt('Parle-moi de Fresha et Acuity')">
+    <rect x="210" y="360" width="110" height="44" rx="8" stroke-width="0.5"/>
+    <text class="th" x="265" y="379" text-anchor="middle" dominant-baseline="central">Fresha / Acuity</text>
+    <text class="ts" x="265" y="395" text-anchor="middle" dominant-baseline="central">Généralistes SMS</text>
+  </g>
+
+  <!-- Anolla (Email + Formateurs) -->
+  <g class="competitor c-amber" onclick="sendPrompt('Parle-moi d\'Anolla')">
+    <rect x="430" y="310" width="100" height="44" rx="8" stroke-width="0.5"/>
+    <text class="th" x="480" y="329" text-anchor="middle" dominant-baseline="central">Anolla</text>
+    <text class="ts" x="480" y="345" text-anchor="middle" dominant-baseline="central">Formateurs / email</text>
+  </g>
+
+  <!-- Klaxo / Glitz (Email + Auto-école) -->
+  <g class="competitor c-amber" onclick="sendPrompt('Parle-moi de Klaxo et Glitz')">
+    <rect x="548" y="360" width="88" height="44" rx="8" stroke-width="0.5"/>
+    <text class="th" x="592" y="379" text-anchor="middle" dominant-baseline="central">Klaxo/Glitz</text>
+    <text class="ts" x="592" y="395" text-anchor="middle" dominant-baseline="central">Auto-école / SMS</text>
+  </g>
+
+  <!-- TON PROJET (étoile dans le quadrant vide) -->
+  <g class="your-spot" onclick="sendPrompt('Comment se différencier de la concurrence sur ce marché ?')">
+    <rect x="430" y="90" width="120" height="50" rx="10" fill="#534AB7" stroke="#3C3489" stroke-width="1.5"/>
+    <text x="490" y="110" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#EEEDFE">Ton projet</text>
+    <text x="490" y="128" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#AFA9EC">WA + formateurs</text>
+  </g>
+
+  <!-- Légende -->
+  <g class="c-teal"><rect x="62" y="450" width="12" height="12" rx="2"/></g>
+  <text class="ts" x="80" y="460" dominant-baseline="central">WhatsApp natif</text>
+  <g class="c-gray"><rect x="180" y="450" width="12" height="12" rx="2"/></g>
+  <text class="ts" x="198" y="460" dominant-baseline="central">Email/SMS</text>
+  <g class="c-amber"><rect x="280" y="450" width="12" height="12" rx="2"/></g>
+  <text class="ts" x="298" y="460" dominant-baseline="central">Spécialisé formation</text>
+  <rect x="420" y="450" width="12" height="12" rx="2" fill="#534AB7"/>
+  <text class="ts" x="438" y="460" dominant-baseline="central">Ton positionnement cible</text>
+
+</svg>

@@ -101,6 +101,18 @@ idée ancrée dans le contexte mais qui en explore les limites
 **Classifier idées**: matrice de decision (basé sur l'effort et l'impact)
 
 
+### C6 - Analyse de la concurrence
+- Prendre 5 ou 6 entreprises
+- Leurs points forts
+- Leurs points faibles
+- Nos avantages concurrentiels
 
+**Analyse**: offres, prix, canaux de distribution, strat de fidélisation, innovation, pub, rapport annuel, nb personnes, clientèle
 
+**Mapping concurrentiels**: compare visuellement offres
+**Etape**:
+- Définir critères
+- Identifier concurrence
+- Benchmark
+- Comparer
 
