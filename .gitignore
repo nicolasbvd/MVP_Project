@@ -1,0 +1,24 @@
+# Dependencies
+Landing_Page/node_modules/
+
+# Build outputs
+Landing_Page/dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.*
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+texte_pres1.txt
