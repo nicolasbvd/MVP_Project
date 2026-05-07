@@ -390,4 +390,32 @@ Guide d'utilisation de what's app buisness, relié à un dashboard sur le web po
 
 Utiliser Twilio peut aider.
 
+# Buisness modèle
+- B2B 
+
+Idées:
+- Installation pour un prix fixe et entretien chaque année
+- Prix par abonnement
+- Version gratuite avec option payantes
+- paiement à l'usage
+- License annuel
+- Temps de formation
+
+- Prix par nombre de formateurs
+- Paiement what's app buisness
+- hébergement groupé avec prix fixe, pas cher?
+- Demande d'amélioration facile, avec temps d'attente clair pour l'avoir -> formulaire de contact
+- Automatiser de plus en plus, à différents prix
+- Offre fixe ou flexible au client
+
+
+# Promotion
+**Landing page**:  
+- Présentation de ce qu'on fait
+- Facile et rapide
+- Outils connus
+- Petite démo de dashboard -> vidéo
+- Prix bas
+
+
 

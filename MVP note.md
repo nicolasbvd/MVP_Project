@@ -116,3 +116,55 @@ idée ancrée dans le contexte mais qui en explore les limites
 - Benchmark
 - Comparer
 
+### C7 - Pitcher son idée
+
+### C8 - Se faire payer pour sa passion
+**Buisness model**:  
+- Proposition de valeur : qu'est-ce qui rend votre produit ou service unique ?
+- Segments de clients : qui sont vos clients cibles ?
+- Canaux de distribution : comment atteignez-vous vos clients ?
+- Relations clients : comment interagissez-vous avec vos clients ?
+- Sources de revenus : comment générez-vous des revenus ?
+- Ressources clés : quelles ressources sont nécessaires pour votre projet ?
+- Partenaires clés : qui sont vos partenaires stratégiques ?
+- Activités principales : quelles sont les activités essentielles à votre projet ?
+- Structure des coûts : quels sont les coûts associés à votre projet ?
+
+**Source de revenu**:  
+- Buisness to Buisness (B2B)
+- Buisness to Consumer (B2C)
+- Inscription, à la demande, abonnement
+
+**Aspects légaux**:  
+- Assurances : Il est obligatoire en Suisse de s'affilier à l'AVS (Assurance Vieillesse et Survivants) et de cotiser à l'AI (Assurance Invalidité) si vous êtes indépendant.e. Vous devez également vous assurer contre les accidents professionnels et non professionnels. En outre, il est recommandé de souscrire une assurance responsabilité civile professionnelle pour vous protéger en cas de dommages causés à des tiers dans le cadre de votre activité selon votre secteur. professionnelle.
+- Fiscalité : Renseignez-vous sur les obligations fiscales liées à votre activité, notamment en matière d'impôts sur le revenu. En tant qu'indépendant.e, vous devez vous déclarer auprès des autorités compétentes.
+- Droit de la concurrence : Évitez les pratiques commerciales déloyales et respectez les règles de la concurrence pour ne pas nuire à d'autres entreprises.
+- Contrats : Si vous travaillez avec des partenaires ou des client.es, il est conseillé de rédiger des contrats clairs pour définir les droits et obligations de chaque partie.
+### C9 - Promouvoir son idée
+**Façon de promouvoir**:  
+- pitch
+- présence en ligne
+- évenements
+- bouche à oreille
+- ...
+
+**Comment**:  
+- connaitre audience
+- clair, concis
+- émotion
+- authentique
+- bons canaux
+- perseverant
+
+Cacher son idée pour ne pas etre copié est une mauvaise idée
+
+**landing page**:  
+- hmtl, css, js
+- formulaire de contact: web3forms, google forms, ...
+- Hébergement: Github Pages, GitLab Pages, Netlify, Firebase Hosting, Heroku, Vercel
+- Attention aux bonnes pratique de référencement -> https://pagespeed.web.dev/
+- Utiliser Google Search Console pour soumettre page, utiliser un fichier robots.txt pour indiquer les pages à indexer
+
+
+
+

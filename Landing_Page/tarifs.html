@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion TemPro - Tarifs</title>
+    <meta
+      name="description"
+      content="Tarifs de Gestion TemPro pour les formateurs et structures independantes."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-1" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
+
+    <header class="site-header container">
+      <a href="index.html" class="brand">
+        <span class="brand-dot"></span>
+        Gestion TemPro
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Home</a>
+        <a href="inscription.html">Inscription</a>
+        <a href="tarifs.html">Tarifs</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="auth-trigger">Connexion</button>
+        <button class="btn btn-secondary" id="logout-btn" hidden>Deconnexion</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero container reveal">
+        <p class="eyebrow">Tarifs</p>
+        <h1>Des offres claires, adaptees a la formation independante.</h1>
+        <p>
+          Commencez petit, activez plus d'automatisation au fur et a mesure de votre croissance.
+        </p>
+      </section>
+
+      <section class="section container reveal">
+        <div class="pricing-grid">
+          <article class="price-card">
+            <p class="plan">Abonnement</p>
+            <p class="price">à partir de 15 CHF<span>/mois</span></p>
+            <ul>
+              <li>1 - 10 formateur</li>
+              <li>Rappels</li>
+              <li>Liste d'attente</li>
+              <li>Support avancé</li>
+              <li>Demande d'amélioration</li>
+            </ul>
+            <a class="btn btn-secondary" href="inscription.html">Choisir Starter</a>
+          </article>
+
+          <article class="price-card">
+            <p class="plan">Setup</p>
+            <p class="price">200 CHF<span>une fois</span></p>
+            <ul>
+              <li>Installation complete</li>
+              <li>Import des eleves</li>
+              <li>Adaptation sur votre téléphone</li>
+              <li>Formation</li>
+            </ul>
+            <a class="btn btn-secondary" href="inscription.html">Demander installation</a>
+          </article>
+
+          <article class="price-card">
+            <p class="plan">Amélioration</p>
+            <p class="price">à partir de 50 CHF<span>une fois</span></p>
+            <ul>
+              <li>Discussion</li>
+              <li>Adaptation de votre système</li>
+              <li>Confirmation</li>
+            </ul>
+            <a class="btn btn-secondary" href="inscription.html">Demander installation</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>GTP - Prototype landing page</p>
+      <a href="#">Mentions legales</a>
+    </footer>
+
+    <div id="auth-modal" class="modal" hidden>
+      <div class="modal-card">
+        <button class="modal-close" id="auth-close" aria-label="Fermer">x</button>
+        <h2>Connexion</h2>
+        <p class="modal-copy">Connectez-vous pour acceder a votre espace formateur.</p>
+        <form id="login-form" class="stack-form">
+          <label for="login-email">Email</label>
+          <input id="login-email" name="email" type="email" required />
+          <label for="login-password">Mot de passe</label>
+          <input id="login-password" name="password" type="password" required />
+          <button class="btn btn-primary" type="submit">Se connecter</button>
+          <p id="login-feedback" class="form-feedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
