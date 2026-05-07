@@ -124,6 +124,44 @@ p {
   margin-right: 1.2rem;
 }
 
+.contact-panel {
+  width: 100%;
+  background: #fffdf9;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-panel[hidden] {
+  display: none;
+}
+
+.contact-panel-inner {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+  padding: 0.9rem 0;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.contact-panel-inner a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.contact-note {
+  max-width: 60ch;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .hero {
   padding: 4.2rem 0 3rem;
 }
@@ -480,6 +518,11 @@ p {
   font-weight: 600;
 }
 
+.form-feedback a {
+  color: var(--accent);
+}
+
+
 .modal {
   position: fixed;
   inset: 0;
@@ -548,6 +591,10 @@ p {
     margin-left: auto;
   }
 
+  .contact-panel-inner {
+    padding: 0.9rem 1.2rem;
+  }
+
   .hero-kpis,
   .cards-grid,
   .feature-list,
@@ -585,4 +632,5 @@ p {
     margin-right: 1.2rem;
 
   }
+
 }

@@ -166,5 +166,10 @@ Cacher son idée pour ne pas etre copié est une mauvaise idée
 - Utiliser Google Search Console pour soumettre page, utiliser un fichier robots.txt pour indiquer les pages à indexer
 
 
+## 07.05 ou on en est
+**Landing page**:  
+Il faut encore gérer ou arriv les infos du formulaire, FormSubmit et FormSpree ont pas fonctionné.  
+Il faut aussi changer le nom de domaine.
+
 
 

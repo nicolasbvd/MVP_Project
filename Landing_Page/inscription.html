@@ -21,7 +21,7 @@
     <div class="bg-shape bg-shape-1" aria-hidden="true"></div>
     <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
 
-    <header class="site-header container">
+    <header class="site-header">
       <a href="index.html" class="brand">
         <span class="brand-dot"></span>
         Gestion TemPro
@@ -34,10 +34,19 @@
       </nav>
 
       <div class="header-actions">
-        <button class="btn btn-ghost" id="auth-trigger">Connexion</button>
-        <button class="btn btn-secondary" id="logout-btn" hidden>Deconnexion</button>
+        <button class="btn btn-ghost contact-toggle" data-target="contact-panel">
+          Contact
+        </button>
       </div>
     </header>
+
+    <div id="contact-panel" class="contact-panel" hidden>
+      <div class="contact-panel-inner">
+        <p class="contact-title">Contact</p>
+        <a href="mailto:nicolas.bovard@heig-vd.ch">nicolas.bovard@heig-vd.ch</a>
+        <p class="contact-note">Ecrivez-nous si besoin, on vous repond rapidement.</p>
+      </div>
+    </div>
 
     <main>
       <section class="page-hero container reveal">
@@ -51,34 +60,29 @@
 
       <section class="section container reveal">
         <div class="form-wrap">
-          <form id="signup-form" class="stack-form">
+          <form
+            id="signup-form"
+            class="stack-form"
+            action="https://formsubmit.co/nicolas.bovard@heig-vd.ch"
+            method="POST"
+          >
             <label for="name">Nom complet</label>
             <input id="name" name="name" type="text" required />
 
-            <label for="email">Email professionnel</label>
+            <label for="email">Adresse mail</label>
             <input id="email" name="email" type="email" required />
 
             <label for="phone">Telephone</label>
             <input id="phone" name="phone" type="tel" required />
 
-            <label for="activity">Type de formation</label>
-            <select id="activity" name="activity" required>
-              <option value="">Selectionnez une activite</option>
-              <option value="auto-ecole">Auto-ecole</option>
-              <option value="cours-prive">Cours prive</option>
-              <option value="musique">Musique</option>
-              <option value="autre">Autre</option>
-            </select>
-
-            <div id="custom-activity-wrap" hidden>
-              <label for="custom-activity">Precisez votre secteur de formation</label>
-              <input
-                id="custom-activity"
-                name="customActivity"
-                type="text"
-                placeholder="Ex: langues, informatique, soutien scolaire..."
-              />
-            </div>
+            <label for="custom-activity">Precisez votre secteur de formation</label>
+            <input
+              id="custom-activity"
+              name="customActivity"
+              type="text"
+              placeholder="Ex: langues, informatique, soutien scolaire..."
+              required
+            />
 
             <label for="password">Mot de passe</label>
             <input id="password" name="password" type="password" minlength="6" required />
@@ -86,33 +90,21 @@
             <label for="note">Informations utiles (optionnel)</label>
             <textarea id="note" name="note" rows="4"></textarea>
 
+            <input type="hidden" name="_subject" value="Nouvelle inscription TemPro" />
+            <input type="hidden" name="_captcha" value="false" />
+
             <button class="btn btn-primary" type="submit">Finaliser l'inscription</button>
             <p id="signup-feedback" class="form-feedback" aria-live="polite"></p>
           </form>
         </div>
       </section>
+
     </main>
 
     <footer class="site-footer container">
       <p>GTP - Prototype landing page</p>
       <a href="#">Mentions legales</a>
     </footer>
-
-    <div id="auth-modal" class="modal" hidden>
-      <div class="modal-card">
-        <button class="modal-close" id="auth-close" aria-label="Fermer">x</button>
-        <h2>Connexion</h2>
-        <p class="modal-copy">Connectez-vous pour acceder a votre espace formateur.</p>
-        <form id="login-form" class="stack-form">
-          <label for="login-email">Email</label>
-          <input id="login-email" name="email" type="email" required />
-          <label for="login-password">Mot de passe</label>
-          <input id="login-password" name="password" type="password" required />
-          <button class="btn btn-primary" type="submit">Se connecter</button>
-          <p id="login-feedback" class="form-feedback" aria-live="polite"></p>
-        </form>
-      </div>
-    </div>
 
     <script type="module" src="script.js"></script>
   </body>

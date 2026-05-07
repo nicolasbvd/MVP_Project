@@ -34,10 +34,19 @@
       </nav>
 
       <div class="header-actions">
-        <button class="btn btn-ghost" id="auth-trigger">Connexion</button>
-        <button class="btn btn-secondary" id="logout-btn" hidden>Deconnexion</button>
+        <button class="btn btn-ghost contact-toggle" data-target="contact-panel">
+          Contact
+        </button>
       </div>
     </header>
+
+    <div id="contact-panel" class="contact-panel" hidden>
+      <div class="contact-panel-inner">
+        <p class="contact-title">Contact</p>
+        <a href="mailto:nicolas.bovard@heig-vd.ch">nicolas.bovard@heig-vd.ch</a>
+        <p class="contact-note">Ecrivez-nous si besoin, on vous repond rapidement.</p>
+      </div>
+    </div>
 
     <main>
       <section class="hero container reveal">
@@ -170,25 +179,9 @@
     </main>
 
     <footer class="site-footer container">
-      <p>GTP - Prototype landing page</p>
+      <p>GTP - Gestion TemPro</p>
       <a href="#">Mentions legales</a>
     </footer>
-
-    <div id="auth-modal" class="modal" hidden>
-      <div class="modal-card">
-        <button class="modal-close" id="auth-close" aria-label="Fermer">x</button>
-        <h2>Connexion</h2>
-        <p class="modal-copy">Connectez-vous pour acceder a votre espace formateur.</p>
-        <form id="login-form" class="stack-form">
-          <label for="login-email">Email</label>
-          <input id="login-email" name="email" type="email" required />
-          <label for="login-password">Mot de passe</label>
-          <input id="login-password" name="password" type="password" required />
-          <button class="btn btn-primary" type="submit">Se connecter</button>
-          <p id="login-feedback" class="form-feedback" aria-live="polite"></p>
-        </form>
-      </div>
-    </div>
 
     <script type="module" src="script.js"></script>
   </body>
