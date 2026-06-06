@@ -1,8 +1,13 @@
 ---
 title: Rapport Gestion TemPro
+author:
+       - Nicolas Bovard
+       - Sebastian Diaz
+toc: true
 header-includes:
     - \usepackage{float}
 ---
+
 
 # Introduction
 Le point de départ de ce projet a été pensé pour les rendez-vous médicaux. Nous avons formulé l'hypothèse que les annulations de rendez-vous de dernière minute entrainent une perte financière importante avec une surcharge administrative. Nous avons élargi le public cible pour y mettre tout les métiers basés sur des rendez-vous avec des clients. Par exemple: médecin, coiffeur, garagiste, professeur privé, etc. Le projet consistait alors à faire de la replanification automatique de rendez-vous.  
@@ -68,7 +73,7 @@ Notre projet a plusieurs concurrent. Mais la plupart sont spécialisés dans d'a
     
 
 # Technologies
-Cette partie présente les choix technologiques retenus pour le MVP.
+Cette partie présente les choix technologiques retenus.
 
 ## Technologies implémentées dans le MVP
 
@@ -293,7 +298,32 @@ Points positifs observés :
 # Conclusion
 
 ## Résultats et méthodologie
+Les résultats attendus pour les **professionel** utilisant Gestion TemPro sont:
+- Réduction du temps administratifs
+- Réduction des perte financière
+- Réduction des absences tardives
+- Prise en main facile
+
+Les résultats de leur **clients** attendus sont: 
+- Gain de temps pour prise de rendez-vous, ils n'ont pas besoin d'attendre une réponse du formateur
+- Réduction des oublis de rendez-vous grâce au rappel
+
+### Méthodologie
+
+Nous avons suivi une démarche mixte centrée utilisateur : recherche documentaire et benchmark pour cadrer le besoin, formulation d'hypothèses opérationnelles, puis entretiens avec des professionnels ciblés et tests utilisateurs. Les entretiens ont été analysés afin d'identifier les besoins récurrents, les frictions principales et les scénarios d'usage prioritaires qui ont guidé le choix d'implémentation.
+
+Bilan méthodologique :
+- Ce qui a fonctionné : la combinaison entre interviews terrain et tests rapides a permis de prioriser des fonctionnalités concrètes.
+- Limites : Avec plus de temps, un échantillon d'entretien moins restreint aurait été mieux. Certaines validations restent à confirmer en conditions réelles sur le public cible.
 
 ## Apprentissage et remise en question
+Ce projet et le cours nous ont énormément appris. Nous avons découvert les vrais défis des startups : prise de décision, travail en équipe et importance de valider ses hypothèses. Le principal enseignement est de ne pas se précipiter sur une idée : d’abord identifier le besoin et le public cible, puis aller parler avec eux pour tirer des conclusions concrètes. Le pivot a été un apprentissage précieux, s’il peut faire peur, il ne nécessite pas de repartir de zéro mais permet de redéfinir ce qui rend le projet réellement utile.
+
+Si nous devions recommencer ce projet, nous chercherions une autre solution que Méta. Le gros avantage de Méta est qu'il est connu de presque tout le monde, donc la facilité d'utilisation est évidente. Mais leur plateforme pour les programmeurs n'est pas vraiment adapté.  
+Avec plus de temps, on aurait fait plus d'entretiens avec un public cible plus ciblé afin de plus précisemment identifié les besoins.  
+Le projet a aussi besoin de quelques finitions avant la vraie mise en production.  
 
 ## Prochaines étapes
+- Implémenter les technologies à venir: Stripe, Google Calendar API, Twilio, Sentry, Vercel comme cible d'hébergement.
+- Lancer un pilote auprès d'un petit groupe de professionnels pour valider les hypothèses produit et chiffrer les gains (taux de no‑show, temps de gestion, satisfaction), instrumenter les métriques essentielles.  
+- Organiser le marketing du projet.
