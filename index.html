@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gestion TemPro - Tarifs</title>
+    <title>Gestion TemPro - Home</title>
     <meta
       name="description"
-      content="Tarifs de Gestion TemPro pour les formateurs et structures independantes."
+      content="Gestion TemPro aide les formateurs independants a reduire les annulations et reattribuer les creneaux plus vite."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,57 +53,138 @@
     </div>
 
     <main>
-      <section class="page-hero container reveal">
-        <p class="eyebrow">Tarifs</p>
-        <h1>Des offres claires, adaptees a la formation independante.</h1>
-        <p>
-          Commencez petit, activez plus d'automatisation au fur et a mesure de votre croissance.
-        </p>
+      <section class="hero container reveal">
+        <div class="hero-layout">
+          <div class="hero-content">
+            <p class="eyebrow">Pour formateurs independants</p>
+            <h1>
+              Avec TemPro,
+              <span>votre gestion garde le tempo.</span>
+            </h1>
+            <p class="hero-copy">
+              Automatisez les rappels et la reattribution des annulations en quelques clics.
+              Votre planning reste rempli sans surcharge administrative.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="inscription.html">Demarrer l'inscription</a>
+              <a class="btn btn-secondary" href="https://mvp-gestion-tem-pro.vercel.app/" target="_blank" rel="noopener">Ouvrir l'application</a>
+            </div>
+
+            <div class="hero-kpis" role="list" aria-label="Indicateurs">
+              <article role="listitem">
+                <h3>-35%</h3>
+                <p>de perte dû aux annulations</p>
+              </article>
+              <article role="listitem">
+                <h3>+4h</h3>
+                <p>gagnees par semaine</p>
+              </article>
+              <article role="listitem">
+                <h3>24/7</h3>
+                <p>rappels automatiques</p>
+              </article>
+            </div>
+          </div>
+
+          <aside class="hero-media" aria-label="Apercu du tableau de bord">
+            <img
+              src="/MVP_Project/assets/dashboard-gen-CpdYc6yO.png"
+              alt="Apercu dashboard FormaPro avec rendez-vous et notifications"
+            />
+          </aside>
+        </div>
       </section>
 
-      <section class="section container reveal">
-        <div class="pricing-grid">
-          <article class="price-card">
-            <p class="plan">Abonnement</p>
-            <p class="price">à partir de 15 CHF<span>/mois</span></p>
-            <ul>
-              <li>1 - 10 formateur</li>
-              <li>Rappels</li>
-              <li>Liste d'attente</li>
-              <li>Support avancé</li>
-              <li>Demande d'amélioration</li>
-            </ul>
-            <a class="btn btn-secondary" href="inscription.html">Choisir Starter</a>
+      <section id="probleme" class="section container reveal">
+        <div class="section-title-wrap">
+          <p class="eyebrow">Probleme</p>
+          <h2>Impossible de remplacer votre élève en dernière minute.</h2>
+        </div>
+        <div class="cards-grid">
+          <article class="card">
+            <h3>No-shows</h3>
+            <p>Des pertes directes quand un élève annule trop tard ou oublie son cours.</p>
           </article>
-
-          <article class="price-card">
-            <p class="plan">Setup</p>
-            <p class="price">200 CHF<span>une fois</span></p>
-            <ul>
-              <li>Installation complete</li>
-              <li>Import des eleves</li>
-              <li>Adaptation sur votre téléphone</li>
-              <li>Formation</li>
-            </ul>
-            <a class="btn btn-secondary" href="inscription.html">Demander installation</a>
+          <article class="card">
+            <h3>Temps perdu</h3>
+            <p>Des dizaines de messages pour replanifier un rendez-vous au lieu de se concentrer sur l'essentiel: l'enseignement.</p>
           </article>
-
-          <article class="price-card">
-            <p class="plan">Amélioration</p>
-            <p class="price">à partir de 50 CHF<span>une fois</span></p>
-            <ul>
-              <li>Discussion</li>
-              <li>Adaptation de votre système</li>
-              <li>Confirmation</li>
-            </ul>
-            <a class="btn btn-secondary" href="inscription.html">Demander installation</a>
+          <article class="card">
+            <h3>Stress opérationnel</h3>
+            <p> L'imprévu créée une charge mentale pouvant impacter la qualité des cours. Une gestion sereine pour un cours serein.</p>
           </article>
         </div>
       </section>
+
+      <section id="solution" class="section section-highlight container reveal">
+        <div class="section-title-wrap">
+          <p class="eyebrow">Solution</p>
+          <h2>Un systeme simple pour remplir automatiquement les trous du planning.</h2>
+        </div>
+
+        <div class="feature-list">
+          <article>
+            <h3>Rappels intelligents</h3>
+            <p>Envoi automatique avant chaque cours selon vos regles (J-1, H-2, etc.).</p>
+          </article>
+          <article>
+            <h3>Liste d'attente active</h3>
+            <p>Quand un creneau se libere, les eleves compatibles sont notifies immediatement.</p>
+          </article>
+          <article>
+            <h3>Regles de priorite</h3>
+            <p>Premier inscrit, fidelite, urgence: vous choisissez la logique d'attribution.</p>
+          </article>
+          <article>
+            <h3>Dashboard clair</h3>
+            <p>Visualisez les pertes evitees, le taux de remplissage et les gains de temps.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container reveal" aria-labelledby="fonctionnement-title">
+        <div class="section-title-wrap">
+          <p class="eyebrow">Fonctionnement</p>
+          <h2 id="fonctionnement-title">Trois etapes pour etre operationnel.</h2>
+        </div>
+
+        <ol class="steps">
+          <li>
+            <span>1</span>
+            <div>
+              <h3>Discussion</h3>
+              <p>On discute ensemble de comment vous voulez que soit votre gestion, avec des conseils adaptés pour votre entreprise.</p>
+            </div>
+          </li>
+          <li>
+            <span>2</span>
+            <div>
+              <h3>Connexion de vos canaux</h3>
+              <p>On relie WhatsApp Business et votre agenda.</p>
+            </div>
+          </li>
+          <li>
+            <span>3</span>
+            <div>
+              <h3>Definition des regles</h3>
+              <p>Vous configurez vos rappels, priorites et options de remplacement.</p>
+            </div>
+          </li>
+          <li>
+            <span>4</span>
+            <div>
+              <h3>Formation rapide</h3>
+              <p>On vous présente votre nouveau système, on vous explique comment l'utiliser efficacement.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
     </main>
 
     <footer class="site-footer container">
-      <p>GTP - Prototype landing page</p>
+      <p>GTP - Gestion TemPro</p>
       <a href="#">Mentions legales</a>
     </footer>
 
