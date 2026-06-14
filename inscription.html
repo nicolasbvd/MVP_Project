@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion TemPro - Inscription</title>
+    <meta
+      name="description"
+      content="Inscription a Gestion TemPro pour les formateurs independants."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/MVP_Project/assets/script-BE0NfCit.js"></script>
+    <link rel="stylesheet" crossorigin href="/MVP_Project/assets/script-Bl1ZFfVz.css">
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-1" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a href="index.html" class="brand">
+        <span class="brand-dot"></span>
+        Gestion TemPro
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html">Home</a>
+        <a href="inscription.html">Inscription</a>
+        <a href="tarifs.html">Tarifs</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost contact-toggle" data-target="contact-panel">
+          Contact
+        </button>
+      </div>
+    </header>
+
+    <div id="contact-panel" class="contact-panel" hidden>
+      <div class="contact-panel-inner">
+        <p class="contact-title">Contact</p>
+        <a href="mailto:nicolas.bovard@heig-vd.ch">nicolas.bovard@heig-vd.ch</a>
+        <p class="contact-note">Ecrivez-nous si besoin, on vous repond rapidement.</p>
+      </div>
+    </div>
+
+    <main>
+      <section class="page-hero container reveal">
+        <p class="eyebrow">Inscription</p>
+        <h1>Creer votre espace formateur en 2 minutes.</h1>
+        <p>
+          Configurez vos rappels, vos regles de priorite et commencez a remplir vos
+          creneaux annules automatiquement.
+        </p>
+      </section>
+
+      <section class="section container reveal">
+        <div class="form-wrap">
+          <form
+            id="signup-form"
+            class="stack-form"
+            action="https://formsubmit.co/nicolas.bovard@heig-vd.ch"
+            method="POST"
+          >
+            <label for="name">Nom complet</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Adresse mail</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="phone">Telephone</label>
+            <input id="phone" name="phone" type="tel" required />
+
+            <label for="custom-activity">Precisez votre secteur de formation</label>
+            <input
+              id="custom-activity"
+              name="customActivity"
+              type="text"
+              placeholder="Ex: langues, informatique, soutien scolaire..."
+              required
+            />
+
+            <label for="note">Informations utiles (optionnel)</label>
+            <textarea id="note" name="note" rows="4"></textarea>
+
+            <input type="hidden" name="_subject" value="Nouvelle inscription TemPro" />
+            <input type="hidden" name="_captcha" value="false" />
+
+            <button class="btn btn-primary" type="submit">Finaliser l'inscription</button>
+            <p id="signup-feedback" class="form-feedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer container">
+      <p>GTP - Prototype landing page</p>
+      <a href="#">Mentions legales</a>
+    </footer>
+
+  </body>
+</html>
