@@ -1,5 +1,5 @@
 const STORAGE_USER = 'tempro_user';
-const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/nicolas.bovard@heig-vd.ch';
+const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/nicolas.bovard@heig-vd.ch';
 
 function setupReveal() {
   const revealEls = document.querySelectorAll('.reveal');
@@ -55,7 +55,6 @@ function setupSignupForm() {
       phone: String(formData.get('phone') || '').trim(),
       activity: customActivity,
       note: String(formData.get('note') || '').trim(),
-      password: String(formData.get('password') || ''),
     };
 
     localStorage.setItem(STORAGE_USER, JSON.stringify(user));
